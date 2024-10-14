@@ -77,7 +77,10 @@ const ServiceSelector: Screen<"ServiceSelector"> = ({ navigation }) => {
               }
             ]
           });
-        } else UnsupportedAlert();
+        } else {
+          navigation.navigate("EcoleDirecteCredentials");
+          playSound();
+        }
       }
     },
     {
